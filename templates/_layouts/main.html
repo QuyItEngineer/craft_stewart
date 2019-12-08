@@ -1,0 +1,111 @@
+ {% extends "_layouts/base" %}
+ 
+ {% block body %}
+ <header class="main_menu">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand d-lg-none" href="">
+                      <img class="logo-header" src="{{ alias('@web/assets/images/logo-light.png') }}" alt="logo">
+                    </a>
+                    <div class="collapse navbar-collapse main-menu-item justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav w-100 justify-content-between">
+                            <li class="nav-item d-lg-block d-none">
+                              <a class="nav-link" href="#">
+                                <img class="logo-header" src="{{ alias('@web/assets/images/logo-light.png') }}" alt="logo">
+                              </a>
+                            </li>
+                            <li class="nav-item menu-hover-s active">
+                                <a class="nav-link" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item menu-hover-s">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="nav-item menu-hover-s">
+                                <a class="nav-link" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item menu-hover-s">
+                                <a class="nav-link" href="#">OUR PEOPLE</a>
+                            </li>
+                            <li class="nav-item menu-hover-s">
+                                <a class="nav-link" href="#">NEWS</a>
+                            </li>
+                            <li class="nav-item menu-hover-s">
+                                <a class="nav-link" href="#">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                  <span class="color-red-blur freephone">
+                                    <img class="img-call" src="{{ alias('@web/assets/images/phone-header.png') }}" alt=""> FREEPHONE 
+                                  </span>
+                                  <span class="tel-header color-red-blur"> 0800 783 6125</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+ 
+   <main id="main" role="main" class="container-fluid">
+     {% block main %}{% endblock %}
+   </main>
+ 
+   <footer id="footer" class="container-fluid">
+     <div class="container">
+
+       <div class="main-footer row">
+         <div class="col-md-4">
+           <img src="{{ alias('@web/assets/images/logo-dark.png') }}" class="logo-footer d-block ml-md-auto" alt="logo footer" srcset="">
+          </div>
+          <div class="col-md-4 text-center">
+            <ul class="footer-ul pl-0 d-inline-block">
+              <li>
+                <a class="color-footer" href="#">HOME</a>
+              </li>
+              <li>
+                <a class="color-footer" href="#">ABOUT US</a>
+              </li>
+              <li>
+                <a class="color-footer" href="#">SERVICES</a>
+              </li>
+              <li>
+                <a class="color-footer" href="#">OUR PEOPLE</a>
+              </li>
+              <li>
+                <a class="color-footer" href="#">NEWS</a>
+              </li>
+              <li>
+                <a class="color-footer" href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="footer-ul pl-0">
+              <li>
+                <a class="color-footer" href="#">TERMS & CONDITIONS</a>
+              </li>
+              <li>
+                <a class="color-footer" href="#">PRIVACY POLICY</a>
+              </li>
+              <li>
+                <a class="color-footer" href="#">SITEMAP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="sub-footer row">
+      <p class="made-sub-footer color-footer my-4">MADE BY SUGAR RUSH CREATIVE</p>
+    </div>
+   </footer>
+ {% endblock %}
+ 
