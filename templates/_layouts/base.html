@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/css/common.css">
+		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/css/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/css/style.min.css">
 	{% endblock %}
 </head>
 <body {% if bodyClass is defined %}class="{{ bodyClass }}"{% endif %}>
@@ -22,5 +25,19 @@
 	<script src="{{ siteUrl }}assets/js/popper.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="{{ siteUrl }}assets/js/bootstrap.min.js"></script>
+	<!-- slick js -->
+	<script src="{{ siteUrl }}assets/js/slick.min.js"></script>
+
+	{% js %}
+	$(document).ready(function(){
+		$('.ours-slick').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: true
+		});
+	});
+	{% endjs %}
 </body>
 </html>
