@@ -79,34 +79,33 @@
         <div class="modal-body">
             <div class="container-fluid">
                 <div class="row modal-ours">
-                    <div class="col-md-4">
-                            <div class="modal-info-our">
+                    <div class="col-md-5">
+                            <div class="modal-ours__info">
                                 <img class="img-responsive" src="{{ alias('@web/assets/images/ours/ours-01.png') }}" alt="">
                             </div>
-                            <p>
-                                <h6>1234567890</h6>
-                                <h4>thong tin thong bao</h4>
-                            </p>
-                            <p>
-                                <h6>1234567890</h6>
-                                <h4>thong tin thong bao</h4>
-                            </p>
-                            <p>
-                                <h6>1234567890</h6>
-                                <h4>thong tin thong bao</h4>
-                            </p>
-                            <p>
-                                <h6>1234567890</h6>
-                                <h4>thong tin thong bao</h4>
-                            </p>
-                    </div>
-                    <div class="col-md-6 ml-auto">
-                        <div class="d-flex flex-column">
-                            <div class="more-info">
-                                    <h4>thong tin</h4>
-                                    <h6>xxx</h6>
+                            <div class="mt-5">
+                                <h6 class="text-color-gray text-uppercase">telephone</h6>
+                                <p class="text-color-red">1234567890</p>
                             </div>
-                            <div class="more-content mt-5">
+                            <div>
+                                <h6 class="text-color-gray text-uppercase">email</h6>
+                                <p class="text-color-red text-break">cstewart@stewartsolicitors.com</p>
+                            </div>
+                            <div>
+                                <h6 class="text-color-gray text-uppercase">Expertise</h6>
+                                <p class="text-color-red">Commercial Property <br>
+                                    Farming<br>
+                                    Property<br>
+                                    Wills, Probate and Trusts</p>
+                            </div>
+                    </div>
+                    <div class="col-md-7 ml-auto">
+                        <div class="d-flex flex-column">
+                            <div class="modal-ours__more-info">
+                                    <h3 class="text-uppercase">thong tin</h3>
+                                    <h6 class="text-color-gray text-uppercase">xxx</h6>
+                            </div>
+                            <div class="modal-ours__more-content mt-5">
                                 <p>
                                     ve in building strong relationships with our clients which is why ve in building strong relationships with our clients which is why ve in building strong relationships with our clients which is why 
                                 </p>
@@ -135,7 +134,7 @@
                                 <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors and we believe we are the best.</span></p>
                             </div>
                             <div class="ours-contact__button-learn-more mt-4 ml-4">
-                                <a class="text-color-red" href="#">LEAR MORE...</a>
+                                <a class="text-color-pink-red" href="#">LEAR MORE...</a>
                             </div>
                         </div>
                     </div>
@@ -164,14 +163,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4" style="height: 1100px; background-color: aqua;">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 ours-contact__form" style="height: 1100px; background-color: #fff;">
                 form.
             </div>
         </div>
     </div>
 </div>
 
-<div class="full-screen background-red pt-100 pb-10">
+<div class="full-screen background-red ours-slick-parent pt-100 pb-10">
     <h1 class="text-center">Testimonials</h1>
     <div class="container ours-slick mt-5">
         <div class="p-5">
@@ -197,8 +196,16 @@
                 <p>“My Solicitor was very good explaining my case and was friendly to speak with when dealing with my claim.”</p>
                 <h5>Elizabeth</h5>
             </div>
-        </div>        
-      </div>
+        </div>  
+    </div>
+    <div>
+        <span>
+            <img class="ours-slick__next" src="{{ alias('@web/assets/images/ours/our-arrow-next.png') }}" alt="arrow next">
+        </span>
+        <span>
+            <img class="ours-slick__prev" src="{{ alias('@web/assets/images/ours/our-arrow-prev.png') }}" alt="arrow prev">
+        </span>
+    </div>    
 </div>
 
 {% endblock %}
