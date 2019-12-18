@@ -61,7 +61,7 @@
 .ours-contact__form--body .submit { padding: 7px 40px; color: #B1233B; border: 2px solid #B1233B; text-decoration: none; }
 .ours-contact__form--body .submit:hover { color: #B1233B; text-decoration: none; }
 
-.ours-slick-parent { position: relative; }
+.ours-slick-parent { position: relative; color: #fff; }
 
 .ours-slick { max-width: 90%; position: relative; }
 .ours-slick__next { position: absolute; display: inline; max-width: 25px; top: 50%; right: 5%; }
