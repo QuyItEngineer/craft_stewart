@@ -128,7 +128,7 @@
                         <div class="ours-contact__content-block">
                             <div>
                                 <div class="ours-contact__content-block--child">
-                                    <img class="" src="{{ alias('@web/assets/images/ours/ours-experts.png') }}" alt="">
+                                    <img class="w-100" src="{{ alias('@web/assets/images/ours/ours-experts.png') }}" alt="">
                                 </div>
                                 <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
                                 <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors and we believe we are the best.</span></p>
@@ -142,7 +142,7 @@
                         <div class="ours-contact__content-block">
                             <div>
                                 <div class="ours-contact__content-block--child">
-                                    <img class="" src="{{ alias('@web/assets/images/ours/our-location.png') }}" alt="">
+                                    <img class="w-100" src="{{ alias('@web/assets/images/ours/our-location.png') }}" alt="">
                                 </div>
                                 <h2 class="mt-4 ml-4"><span class="text-center">Our Locations</span></h2>
                                 <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors and we believe we are the best.</span></p>
@@ -163,10 +163,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 ours-contact__form" style="height: 1100px; background-color: #fff;">
-                <div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 ours-contact__form">
+                <div class="bg-white p-5">
                     <div class="ours-contact__form--title">
-                        Contact Us
+                        <h3>Contact Us</h3>
                     </div>
                     <div class="ours-contact__form--body">
                         <!-- form. -->
@@ -187,35 +187,45 @@
                             <input type="hidden" name="action" value="contact-form/send">
                             {{ redirectInput('contact/thanks') }}
 
-                            <h3><label for="from-name" class="text-uppercase text-color-gray">Your Name*</label></h3>
-                            <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+                            <h6 class="mt-5"><label for="from-name" class="text-uppercase text-color-gray">Your Name*</label></h6>
+                            <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}" class="form-control">
                             {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
 
-                            <h3><label for="from-email" class="text-uppercase text-color-gray">Your Email*</label></h3>
-                            <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+                            <h6 class="mt-4"><label for="from-email" class="text-uppercase text-color-gray">Your Email*</label></h6>
+                            <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" class="form-control">
                             {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
 
-                            <h3><label for="from-phone" class="text-uppercase text-color-gray">Your Telephone No.</label></h3>
-                            <input id="from-phone" type="number" name="fromPhone" value="{{ message.fromPhone ?? '' }}">
+                            <h6 class="mt-4"><label for="from-phone" class="text-uppercase text-color-gray">Your Telephone No.</label></h6>
+                            <input id="from-phone" type="number" name="fromPhone" value="{{ message.fromPhone ?? '' }}" class="form-control">
                             {{ message is defined and message ? errorList(message.getErrors('fromPhone')) }}
 
-                            <h3><label for="from-houseNo" class="text-uppercase text-color-gray">house No.</label></h3>
-                            <input id="from-houseNo" type="number" name="fromHouseNo" value="{{ message.fromHouseNo ?? '' }}">
+                            <h6 class="mt-4"><label for="from-houseNo" class="text-uppercase text-color-gray">house No.</label></h6>
+                            <input id="from-houseNo" type="number" name="fromHouseNo" value="{{ message.fromHouseNo ?? '' }}" class="form-control">
                             {{ message is defined and message ? errorList(message.getErrors('fromHouseNo')) }}
 
-                            <h3><label for="from-postcode" class="text-uppercase text-color-gray">Postcode</label></h3>
-                            <input id="from-postcode" type="number" name="fromPostcode" value="{{ message.fromPostcode ?? '' }}">
+                            <h6 class="mt-4"><label for="from-postcode" class="text-uppercase text-color-gray">Postcode</label></h6>
+                            <input id="from-postcode" type="number" name="fromPostcode" value="{{ message.fromPostcode ?? '' }}" class="form-control">
                             {{ message is defined and message ? errorList(message.getErrors('fromPostcode')) }}
 
-                            <h3><label for="message">Your Message</label></h3>
-                            <textarea rows="10" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
+                            <h6 class="mt-4"><label for="message" class="text-uppercase text-color-gray">Your Message</label></h6>
+                            <textarea rows="10" cols="40" id="message" name="message" class="form-control">{{ message.message ?? '' }}</textarea>
                             {{ message is defined and message ? errorList(message.getErrors('message')) }}
 
-                            <h3><label for="from-email" class="text-uppercase text-color-gray">Choose your Preferred Branch</label></h3>
-                            <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+                            <h6 class="mt-4"><label for="from-email" class="text-uppercase text-color-gray">Choose your Preferred Branch</label></h6>
+                            <select id="from-choose" name="choose[type]" class="form-control">
+                                <option value="——" selected="selected">Please select...</option>
+                                <option value="Belfast">Belfast</option>
+                                <option value="Ballymena">Ballymena</option>
+                                <option value="Newtownards">Newtownards</option>
+                                <option value="Holywood">Holywood</option>
+                                <option value="Comber">Comber</option>
+                                <option value="Kircubbin">Kircubbin</option>
+                            </select>
                             {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
 
-                            <input type="submit" class="text-uppercase" value="Send">
+                            <div class="text-center mt-5">
+                                <input type="submit" class="text-uppercase submit" value="Send">
+                            </div>
                         </form>
                     </div>
                 </div>

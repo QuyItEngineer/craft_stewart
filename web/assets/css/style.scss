@@ -210,8 +210,29 @@
         }
     }
     &__form {
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 767px){
             margin-top: 100px;
+        }
+        select {
+            color: #B1233B;
+            option {
+                color: #B1233B;
+            }
+            &:focus {
+                color: #B1233B;
+            }
+        }
+        &--body {
+            .submit {
+                padding: 7px 40px;
+                color: #B1233B;
+                border: 2px solid #B1233B;
+                text-decoration: none;
+                &:hover {
+                    color: #B1233B;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
