@@ -1,0 +1,265 @@
+{% extends "_layouts/main" %}
+
+{% block main %}
+
+<section class="full-screen height-100 background-red d-flex flex-column justify-content-center">
+    <span></span>
+    <div class="container breadcrumbs text-white">
+        <div class="breadcrumbs__child text-uppercase">
+            <span style="color: rgba(246, 124, 145, 1.0);">HOME</span> <span style="color: rgba(246, 124, 145, 1.0);">></span> <span>ours people</span>
+        </div>
+    </div>
+    <span></span>
+</section>
+
+<section class="ours container mt-100">
+        <div class="row">
+            <div class="col-12">
+                <h2>Our People</h2>
+            </div>
+            <div class="col-12 mt-5 text-justify">
+                <p>We believe in building strong relationships with our clients which is why we have compiled these biographies for you to read and get to know the people you may be working with. Please select a Solicitor from the list below to read their biography.</p>
+            </div>
+        </div>
+</section>
+
+<section class="ours container mt-5">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 text-center mb-5">
+            <div class="info-our">
+                <img class="img-responsive" src="{{ alias('@web/assets/images/ours/ours-01.png') }}" alt="">
+                <div class="info-our__overlay">
+                   <a class="info-our__overlay--button-detail" href="#" data-toggle="modal" data-target="#exampleModalCenter">learn more</a>
+                </div>
+            </div>
+            <h4 class="mt-3"><span class="text-center">Charles E. Stewart</span></h4>
+            <h6 class="mt-3"><span class="text-center text-uppercase">Director</span></h6>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 text-center mb-5">
+            <div class="info-our">
+                <img class="img-responsive" src="{{ alias('@web/assets/images/ours/ours-01.png') }}" alt="">
+                <div class="info-our__overlay">
+                    <a class="info-our__overlay--button-detail" href="#" data-toggle="modal" data-target="#exampleModalCenter">learn more</a>
+                </div>
+            </div>
+            <h4 class="mt-3"><span class="text-center">Charles E. Stewart</span></h4>
+            <h6 class="mt-3"><span class="text-center text-uppercase">Director</span></h6>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 text-center mb-5">
+            <div class="info-our">
+                <img class="img-responsive" src="{{ alias('@web/assets/images/ours/ours-01.png') }}" alt="">
+                <div class="info-our__overlay">
+                    <a class="info-our__overlay--button-detail" href="#" data-toggle="modal" data-target="#exampleModalCenter">learn more</a>
+                </div>
+            </div>
+            <h4 class="mt-3"><span class="text-center">Charles E. Stewart</span></h4>
+            <h6 class="mt-3"><span class="text-center text-uppercase">Director</span></h6>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 text-center mb-5">
+            <div class="info-our">
+                <img class="img-responsive" src="{{ alias('@web/assets/images/ours/ours-01.png') }}" alt="">
+                <div class="info-our__overlay">
+                    <a class="info-our__overlay--button-detail" href="#" data-toggle="modal" data-target="#exampleModalCenter">learn more</a>
+                </div>
+            </div>
+            <h4 class="mt-3"><span class="text-center">Charles E. Stewart</span></h4>
+            <h6 class="mt-3"><span class="text-center text-uppercase">Director</span></h6>
+        </div>
+    </div> 
+</section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered custom-modal" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row modal-ours">
+                    <div class="col-md-5">
+                            <div class="modal-ours__info">
+                                <img class="img-responsive" src="{{ alias('@web/assets/images/ours/ours-01.png') }}" alt="">
+                            </div>
+                            <div class="mt-5">
+                                <h6 class="text-color-gray text-uppercase">telephone</h6>
+                                <p class="text-color-red">1234567890</p>
+                            </div>
+                            <div>
+                                <h6 class="text-color-gray text-uppercase">email</h6>
+                                <p class="text-color-red text-break">cstewart@stewartsolicitors.com</p>
+                            </div>
+                            <div>
+                                <h6 class="text-color-gray text-uppercase">Expertise</h6>
+                                <p class="text-color-red">Commercial Property <br>
+                                    Farming<br>
+                                    Property<br>
+                                    Wills, Probate and Trusts</p>
+                            </div>
+                    </div>
+                    <div class="col-md-7 ml-auto">
+                        <div class="d-flex flex-column">
+                            <div class="modal-ours__more-info">
+                                    <h3 class="text-uppercase">thong tin</h3>
+                                    <h6 class="text-color-gray text-uppercase">xxx</h6>
+                            </div>
+                            <div class="modal-ours__more-content mt-5">
+                                <p>
+                                    ve in building strong relationships with our clients which is why ve in building strong relationships with our clients which is why ve in building strong relationships with our clients which is why 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ours-contact full-screen background-gray mt-5 pt-100 pb-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="ours-contact__content-block">
+                            <div>
+                                <div class="ours-contact__content-block--child">
+                                    <img class="" src="{{ alias('@web/assets/images/ours/ours-experts.png') }}" alt="">
+                                </div>
+                                <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
+                                <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors and we believe we are the best.</span></p>
+                            </div>
+                            <div class="ours-contact__button-learn-more mt-4 ml-4">
+                                <a class="text-color-pink-red" href="#">LEAR MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="ours-contact__content-block">
+                            <div>
+                                <div class="ours-contact__content-block--child">
+                                    <img class="" src="{{ alias('@web/assets/images/ours/our-location.png') }}" alt="">
+                                </div>
+                                <h2 class="mt-4 ml-4"><span class="text-center">Our Locations</span></h2>
+                                <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors and we believe we are the best.</span></p>
+                            </div>
+                            <div class="ours-contact__button-learn-more mt-4 ml-4">
+                                <a class="text-color-red" href="#">LEAR MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ours-contact__content-background mt-5">
+                            <img class="ours-contact__content-background--parent" src="{{ alias('@web/assets/images/ours/ours-play-video.png') }}" alt="">
+                            <img class="ours-contact__content-background--logo" src="{{ alias('@web/assets/images/logo-light.png') }}" alt="">
+                            <a class="ours-contact__content-background--button" href="#">PLAY VIDEO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 ours-contact__form" style="height: 1100px; background-color: #fff;">
+                <div>
+                    <div class="ours-contact__form--title">
+                        Contact Us
+                    </div>
+                    <div class="ours-contact__form--body">
+                        <!-- form. -->
+                        {% macro errorList(errors) %}
+                            {% if errors %}
+                                <ul class="errors">
+                                    {% for error in errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        {% endmacro %}
+
+                        {% from _self import errorList %}
+
+                        <form method="post" action="" accept-charset="UTF-8">
+                            {{ csrfInput() }}
+                            <input type="hidden" name="action" value="contact-form/send">
+                            {{ redirectInput('contact/thanks') }}
+
+                            <h3><label for="from-name" class="text-uppercase text-color-gray">Your Name*</label></h3>
+                            <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+
+                            <h3><label for="from-email" class="text-uppercase text-color-gray">Your Email*</label></h3>
+                            <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+
+                            <h3><label for="from-phone" class="text-uppercase text-color-gray">Your Telephone No.</label></h3>
+                            <input id="from-phone" type="number" name="fromPhone" value="{{ message.fromPhone ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromPhone')) }}
+
+                            <h3><label for="from-houseNo" class="text-uppercase text-color-gray">house No.</label></h3>
+                            <input id="from-houseNo" type="number" name="fromHouseNo" value="{{ message.fromHouseNo ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromHouseNo')) }}
+
+                            <h3><label for="from-postcode" class="text-uppercase text-color-gray">Postcode</label></h3>
+                            <input id="from-postcode" type="number" name="fromPostcode" value="{{ message.fromPostcode ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromPostcode')) }}
+
+                            <h3><label for="message">Your Message</label></h3>
+                            <textarea rows="10" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
+                            {{ message is defined and message ? errorList(message.getErrors('message')) }}
+
+                            <h3><label for="from-email" class="text-uppercase text-color-gray">Choose your Preferred Branch</label></h3>
+                            <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+
+                            <input type="submit" class="text-uppercase" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-screen background-red ours-slick-parent pt-100 pb-10">
+    <h1 class="text-center">Testimonials</h1>
+    <div class="container ours-slick mt-5">
+        <div class="p-5">
+            <div class="text-center">
+                <p>“Words cannot describe the excellent manner in which I was treated considering the sensitive nature of the case.”</p>
+                <h5>Hazel</h5>
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="text-center">
+                <p>“Very well treated, everything was explained in a very easy to understand way.”</p>
+                <h5>WILLIAM</h5>
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="text-center">
+                <p>“My Solicitor was very good explaining my case and was friendly to speak with when dealing with my claim.”</p>
+                <h5>Elizabeth</h5>
+            </div>
+        </div>     
+        <div class="p-5">
+            <div class="text-center">
+                <p>“My Solicitor was very good explaining my case and was friendly to speak with when dealing with my claim.”</p>
+                <h5>Elizabeth</h5>
+            </div>
+        </div>  
+    </div>
+    <div>
+        <span>
+            <img class="ours-slick__next" src="{{ alias('@web/assets/images/ours/our-arrow-next.png') }}" alt="arrow next">
+        </span>
+        <span>
+            <img class="ours-slick__prev" src="{{ alias('@web/assets/images/ours/our-arrow-prev.png') }}" alt="arrow prev">
+        </span>
+    </div>    
+</div>
+
+{% endblock %}
