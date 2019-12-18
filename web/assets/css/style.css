@@ -54,7 +54,12 @@
 @media screen and (max-width: 768px) { .ours-contact__content-background--button { width: 100px; top: 65%; font-size: 12px; } }
 @media screen and (max-width: 576px) { .ours-contact__content-background--button { width: 70px; top: 65%; font-size: 6px; } }
 .ours-contact__content-background--button:hover { color: #B1233B; text-decoration: none; }
-@media screen and (max-width: 768px) { .ours-contact__form { margin-top: 100px; } }
+@media screen and (max-width: 767px) { .ours-contact__form { margin-top: 100px; } }
+.ours-contact__form select { color: #B1233B; }
+.ours-contact__form select option { color: #B1233B; }
+.ours-contact__form select:focus { color: #B1233B; }
+.ours-contact__form--body .submit { padding: 7px 40px; color: #B1233B; border: 2px solid #B1233B; text-decoration: none; }
+.ours-contact__form--body .submit:hover { color: #B1233B; text-decoration: none; }
 
 .ours-slick-parent { position: relative; }
 
