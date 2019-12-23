@@ -1,0 +1,269 @@
+{% extends "_layouts/main" %}
+
+{% block main %}
+<div class="row justify-content-center">
+    <div class="cover-img">
+        <img src="{{ alias('@web/assets/images/property/property-cover.png') }}" alt="" class="img-fluid">
+    </div>
+</div>
+<div class="full-screen height-100 background-red d-flex flex-column justify-content-center">
+    <span></span>
+    <div class="container breadcrumbs text-white">
+        <div class="breadcrumbs__child text-uppercase">
+            <span>HOME&gt;</span>
+            <span>SERVICES&gt;</span>
+            <span>PROPERTY</span>
+        </div>
+    </div>
+    <span></span>
+</div>
+<div class="pt-50 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="link-back">
+                    <a href="">SERVICES</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="side-link text-uppercase">
+                    <ul>
+                        <li><a href="">Buying</a></li>
+                        <li><a href="">Selling</a></li>
+                        <li><a href="">Co-Ownership</a></li>
+                        <li><a href="">Remortgaging</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <h2 class="title">
+                            Property
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="body-content">
+                            <p>
+                                As one of the leading property solicitors in Northern Ireland operating out of
+                                offices
+                                in Belfast, Newtownards, Holywood, Ballymena, Comber and Kircubbin, our team of
+                                specialist property (conveyancing) solicitors can guide you through the legal
+                                process of
+                                buying, selling or remortgaging your property. We are a member of the Law Society
+                                Home
+                                Charter Scheme which means that we meet the high standards the Law Society sets to
+                                ensure that we give clients a professional and quality conveyancing service. Our
+                                priorities are to make you feel comfortable with us and confident that your move
+                                will go
+                                to plan at a reasonable price.
+                            </p>
+                            <br>
+                            <p>
+                                We will be pro-active on your behalf to ensure the moving process runs as smoothly
+                                as
+                                possible, keeping you informed at all stages along the way so that the house moving
+                                experience is as stress free as possible. Our property team are very experienced and
+                                have seen or dealt with almost every problem or situation which can arise when
+                                moving
+                                home. A high percentage of our work comes from repeat business or recommendations
+                                which
+                                is testament to our professional, friendly and effective service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                        <div class="background-rose p-5">
+                            <div class="property__form--title">
+                                <h3>Selling or Buying Property?</h3>
+                            </div>
+                            <div class="property__form--description">
+                                Unlike many solicitors, we will not quote you a low fee, only to boost it up with
+                                numerous ‘extra’
+                                charges. Our standard charges include many of the things other conveyancing solicitors
+                                charge extra
+                                for.<br />
+                                Get a quick quote today.
+                            </div>
+                            <div class="property__form--body">
+                                <!-- form. -->
+                                <form method="post" action="" accept-charset="UTF-8">
+                                    <h6 class="mt-5"><label for="from-choose" class="text-uppercase text-color-gray">ARE
+                                            YOU BUYING OR
+                                            SELLING?</label></h6>
+                                    <select id="from-choose__1" name="choose[type]" class="form-control">
+                                        <option value="——" selected="selected">Please select...</option>
+                                        <option value="Belfast">Belfast</option>
+                                        <option value="Ballymena">Ballymena</option>
+                                    </select>
+                                    <h6 class="mt-4"><label for="from-name" class="text-uppercase text-color-gray">Your
+                                            Name*</label>
+                                    </h6>
+                                    <input id="from-name" type="text" name="fromName" value="" class="form-control">
+
+                                    <h6 class="mt-4"><label for="from-email" class="text-uppercase text-color-gray">Your
+                                            Email*</label>
+                                    </h6>
+                                    <input id="from-email" type="email" name="fromEmail" value="" class="form-control">
+
+
+                                    <h6 class="mt-4"><label for="from-phone" class="text-uppercase text-color-gray">Your
+                                            Telephone
+                                            No.</label></h6>
+                                    <input id="from-phone" type="tel" name="fromPhone" value="" class="form-control">
+
+
+                                    <h6 class="mt-4"><label for="from-houseNo"
+                                            class="text-uppercase text-color-gray">house
+                                            No.</label>
+                                    </h6>
+                                    <input id="from-houseNo" type="text" name="fromHouseNo" value=""
+                                        class="form-control">
+
+
+                                    <h6 class="mt-4"><label for="from-postcode"
+                                            class="text-uppercase text-color-gray">Postcode</label>
+                                    </h6>
+                                    <input id="from-postcode" type="text" name="fromPostcode" value=""
+                                        class="form-control">
+
+                                    <h6 class="mt-4"><label for="from-property_value"
+                                            class="text-uppercase text-color-gray">PROPERTY
+                                            VALUE*</label>
+                                    </h6>
+                                    <input id="from-property_value" type="text" name="fromPostcode" value=""
+                                        class="form-control">
+                                    <h6 class="mt-4"><label for="from-email"
+                                            class="text-uppercase text-color-gray">Choose your
+                                            Preferred
+                                            Branch</label></h6>
+                                    <select id="from-choose__2" name="choose[type-2]" class="form-control">
+                                        <option value="——" selected="selected">Please select...</option>
+                                        <option value="Belfast">Belfast</option>
+                                        <option value="Ballymena">Ballymena</option>
+                                        <option value="Newtownards">Newtownards</option>
+                                        <option value="Holywood">Holywood</option>
+                                        <option value="Comber">Comber</option>
+                                        <option value="Kircubbin">Kircubbin</option>
+                                    </select>
+                                    <div class="text-center mt-5">
+                                        <input type="submit" class="text-uppercase submit" value="START QUOTE">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="other-service background-brown full-screen pt-100 pb-100">
+    <div class="container">
+        <h2 class="title pb-50">
+            Other Services
+        </h2>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="other-service__content-block">
+                    <div>
+                        <div class="other-service__content-block--child">
+                            <img class="w-100" src="./assets/images/property/a.png" alt="">
+                        </div>
+                        <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
+                        <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors
+                                and we
+                                believe we are the best.</span></p>
+                    </div>
+                    <div class="other-service__button-learn-more mt-4 ml-4">
+                        <a class="text-color-pink-red" href="#">LEARN MORE...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="other-service__content-block">
+                    <div>
+                        <div class="other-service__content-block--child">
+                            <img class="w-100" src="./assets/images/a.png" alt="">
+                        </div>
+                        <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
+                        <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors
+                                and we
+                                believe we are the best.</span></p>
+                    </div>
+                    <div class="other-service__button-learn-more mt-4 ml-4">
+                        <a class="text-color-pink-red" href="#">LEARN MORE...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="other-service__content-block">
+                    <div>
+                        <div class="other-service__content-block--child">
+                            <img class="w-100" src="{{ alias('@web/assets/images/a.png') }}" alt="">
+                        </div>
+                        <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
+                        <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of sectors
+                                and we
+                                believe we are the best.</span></p>
+                    </div>
+                    <div class="other-service__button-learn-more mt-4 ml-4">
+                        <a class="text-color-pink-red" href="#">LEARN MORE...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-screen background-red ours-slick-parent pt-100 pb-10">
+    <h1 class="text-center">Testimonials</h1>
+    <div class="container">
+        <div class="ours-slick mt-5">
+            <div class="p-5">
+                <div class="text-center">
+                    <p>“Words cannot describe the excellent manner in which I was treated considering the sensitive
+                        nature of
+                        the case.”</p>
+                    <h5>Hazel</h5>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="text-center">
+                    <p>“Very well treated, everything was explained in a very easy to understand way.”</p>
+                    <h5>WILLIAM</h5>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="text-center">
+                    <p>“My Solicitor was very good explaining my case and was friendly to speak with when dealing with
+                        my
+                        claim.”</p>
+                    <h5>Elizabeth</h5>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="text-center">
+                    <p>“My Solicitor was very good explaining my case and was friendly to speak with when dealing with
+                        my
+                        claim.”</p>
+                    <h5>Elizabeth</h5>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>
+                <img class="ours-slick__next" src="{{ alias('@web/assets/images/ours/our-arrow-next.png') }}" alt="arrow next">
+            </span>
+            <span>
+                <img class="ours-slick__prev" src="{{ alias('@web/assets/images/ours/our-arrow-prev.png') }}" alt="arrow prev">
+            </span>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
